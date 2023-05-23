@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexController;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return Inertia::render('App');
+//
+//});
+
+Route::get('/', [IndexController::class, 'index'])->name('home');
+//Route::resource('books', BookController::class)->except(['show']);
+
+Route::get('/app/{page}', function () {
+    return Inertia::render('App');
+})->where('page', '.*');
