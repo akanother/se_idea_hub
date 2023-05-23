@@ -2,7 +2,7 @@
     <div>
         <h1>コンポーネントの内容</h1>
         <p>{{ count }}</p>
-        <button @click="increment">カウントアップ</button>
+        <button @click="increment" class="button is-primary">カウントアップ</button>
     </div>
 </template>
 
