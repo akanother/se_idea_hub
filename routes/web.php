@@ -15,14 +15,16 @@ use Inertia\Inertia;
 |
 */
 
-//Route::get('/', function () {
-//    return Inertia::render('App');
-//
-//});
 
 Route::get('/', [IndexController::class, 'index'])->name('home');
-//Route::resource('books', BookController::class)->except(['show']);
+
 
 Route::get('/app/{page}', function () {
     return Inertia::render('App');
 })->where('page', '.*');
+
+//
+//BooK Manager
+//
+use App\Http\Controllers\BookManager\BookController;
+Route::get('book/index',[BookController::class,'index'])->name('book-index');

@@ -17,5 +17,3 @@ createInertiaApp({
 // プログレスバーの設定
 InertiaProgress.init()
 
-//Bulma CSS FrameWork
-import 'bulma/css/bulma.css';

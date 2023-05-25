@@ -7,8 +7,11 @@
 </head>
 <body>
 <div>
+
+
     @yield('content')
     @inertia
+
 </div>
 </body>
 </html>
