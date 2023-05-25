@@ -1,0 +1,38 @@
+/*Japanese font*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap');
+/*Logo Font Kuramie*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/*
+KURAMIE LOGO FONT
+ */
+.font-logo {
+    font-family: 'Permanent Marker', cursive;
+}
+
+/*
+Japanese Font
+ */
+.font-jp {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+/*
+カスタムスタイル
+ユーザログイン
+ */
+.auth-body-bg {
+    background: #ffffff;
+}
+.auth-full-bg .bg-overlay {
+    background: url("../images/k_bg/dev.jpeg") no-repeat center;
+    background-size: cover;
+}
+
+/*
+ * for Alpine.js
+ */
+[x-cloak] {
+
+    display: none !important;
+
+}

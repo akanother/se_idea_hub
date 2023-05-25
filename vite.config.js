@@ -8,7 +8,15 @@ export default defineConfig({
         vue(),
         basicSsl(),
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
+            input: [
+                'public/assets/css/bootstrap.min.css',
+                'public/assets/css/icons.min.css',
+                'public/assets/css/app.min.css',
+                'public/assets/css/custom.css',
+                'public/assets/libs/sweetalert2/sweetalert2.min.css',
+                'node_modules/tom-select/src/scss/tom-select.scss',
+                'resources/css/app.css',
+                'resources/js/app.jsx'],
             refresh: true,
         }),
     ],
@@ -20,6 +28,6 @@ export default defineConfig({
         },
         //Vite ports used by Homestead
         port: 5173,
-    },
+    }
 });
 
