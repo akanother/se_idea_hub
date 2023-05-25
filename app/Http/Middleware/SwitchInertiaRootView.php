@@ -17,7 +17,8 @@ class SwitchInertiaRootView
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($request->is('books/*')) { // 'books/*' パスに一致する場合
+        if ($request->is('book/*')) { // 'books/*' パスに一致する場合
+
 
             Inertia::setRootView('app-book');
 
